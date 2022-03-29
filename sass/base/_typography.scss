@@ -12,6 +12,7 @@ body {
         font-size: 18px;
         font-weight: 100;
         color: white;
+        
     }
     &__link a{
         text-decoration: none;
@@ -36,6 +37,13 @@ h1 {
 }
 
 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 700;
