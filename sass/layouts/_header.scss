@@ -1,0 +1,14 @@
+@import "../utils/variables";
+
+
+.header {
+    &__heading {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 175px;
+            padding: $base-padding-height;
+            
+        }
+    }
+}

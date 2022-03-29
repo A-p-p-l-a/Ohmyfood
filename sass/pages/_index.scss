@@ -1,0 +1,13 @@
+@import "../utils/variables";
+@import "../base/typography";
+
+.nav__link a{
+    display: none;
+}
+
+.location {
+    &__banner{
+        background-color: $colour-dark-grey;
+    }
+
+}
