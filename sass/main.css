@@ -1,7 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-.header__heading {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Shrikhand&display=swap");
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a,
+em, img, strong, center, ol, ul, li,
+fieldset, form, label, legend,
+table, figure, footer, header,
+menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+.header__heading a {
+  margin: 0px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,8 +30,8 @@
           justify-content: center;
 }
 
-.header__heading img {
-  width: 175px;
+.header__heading a img {
+  width: 150px;
   padding: 10px 0 10px 0;
 }
 
@@ -32,6 +52,27 @@ body {
   color: white;
   font-size: 16px;
   font-weight: 100;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #353535;
 }
 
 footer {
@@ -57,12 +98,77 @@ body {
   font-weight: 100;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #353535;
+}
+
 .nav__link a {
   display: none;
 }
 
 .location__banner {
   background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px 0 16px 0;
+}
+
+.location__banner i {
+  font-size: 16px;
+  padding-right: 17px;
+  color: #353535;
+}
+
+.location__explore {
+  background-color: #f6f6f6;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 40px 50px 40px 50px;
+}
+
+.location__explore h1 {
+  margin-bottom: 10px;
+}
+
+.location__explore p {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 body {
@@ -82,5 +188,26 @@ body {
   color: white;
   font-size: 16px;
   font-weight: 100;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #353535;
 }
 /*# sourceMappingURL=main.css.map */

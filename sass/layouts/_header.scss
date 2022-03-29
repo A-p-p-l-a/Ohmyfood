@@ -2,13 +2,15 @@
 
 
 .header {
-    &__heading {
+    &__heading a {
+        margin: 0px;
+        padding: 0px;
         display: flex;
         justify-content: center;
         img {
-            width: 175px;
-            padding: $base-padding-height;
-            
-        }
+            width: 150px;
+            padding: $ten-padding-height;
+         }
+        
     }
 }
