@@ -3,4 +3,18 @@
 
 footer {
     background-color: $colour-very-dark-grey;
+    padding: 25px;
+    
+    .footer {
+        &__heading {
+            padding-bottom: 15px;
+        }
+    
+    }
+    .link_elements {
+        padding: 5px 0 5px 0;
+    }
 }
+
+
+
