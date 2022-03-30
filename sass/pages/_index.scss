@@ -50,6 +50,7 @@
 
 .functioning {
     margin:50px 20px 50px 20px;
+
     &__explanation {
         .stage {
             background-color: $colour-light-grey;
@@ -104,8 +105,12 @@
     padding: 55px 20px 55px 20px;
     &__menu {
         .menus {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
             margin: 18px 0 18px 0;
-            box-shadow: 0px 5px 15px 0px #a3a2a2;
+            box-shadow: 0px 5px 15px 0px #bdbdbd;
             border-radius: 12px 12px 12px 12px;
             &__image{
                 width: 100%;
@@ -117,6 +122,19 @@
                 }
                 &--center {
                     object-position:0px -150px;
+                }
+            }
+            &__new {
+                position: absolute;
+                padding: 10px 12px 10px 12px;
+                margin: 13px 12px 0 0;
+                border-radius: 2px;
+                background-color: $colour-tertiary;
+
+                a {
+                   font-size: 14px;
+                   color: #008766; 
+                  
                 }
             }
             &__title {
@@ -147,6 +165,7 @@
                             -webkit-text-fill-color: transparent;
                             font-weight: 800;
                             cursor: pointer;
+                            
                         }  
                     } 
                 }
@@ -154,3 +173,4 @@
         }
     }
 }
+

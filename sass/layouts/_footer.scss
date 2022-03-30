@@ -9,10 +9,24 @@ footer {
         &__heading {
             padding-bottom: 15px;
         }
-    
     }
     .link_elements {
         padding: 5px 0 5px 0;
+        display:flex;
+        
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 14px;
+            height: 14px;
+            font-size: 13px;
+            color: white;
+            padding-right: 9px;
+            &.fa-hands-helping {
+                transform: scale(0.65, 1);
+            }
+        }
     }
 }
 
