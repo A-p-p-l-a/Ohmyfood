@@ -60,6 +60,13 @@ h2 {
 
 h3 {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: #353535;
@@ -129,6 +136,13 @@ h2 {
 }
 
 h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -318,12 +332,15 @@ h3 {
   height: 174px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
   border-radius: 12px 12px 0 0;
 }
 
-.restaurants__menu .menus__image--modifier {
+.restaurants__menu .menus__image--bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.restaurants__menu .menus__image--center {
   -o-object-position: 0px -150px;
      object-position: 0px -150px;
 }
@@ -340,16 +357,45 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.restaurants__menu .menus__title h2, .restaurants__menu .menus__title p {
-  padding: 3px 0 3px 0;
+.restaurants__menu .menus__title h3, .restaurants__menu .menus__title p {
+  padding: 3px 0 3px 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.restaurants__menu .menus__title .icons {
+  padding: 10px 24px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 22px;
+}
+
+.restaurants__menu .menus__title .icons .fa-heart:hover {
+  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 body {
@@ -380,6 +426,13 @@ h2 {
 }
 
 h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 700;
