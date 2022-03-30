@@ -50,10 +50,6 @@
 
 .functioning {
     margin:50px 20px 50px 20px;
-    
-    &__title {
-
-    }
     &__explanation {
         .stage {
             background-color: $colour-light-grey;
@@ -130,11 +126,29 @@
                 border-radius: 0 0 12px 12px;
                 display: flex;
                 flex-direction: column; 
-                
-                h2, p {
-                    padding: 3px 0 3px 0;
+                flex-wrap: wrap;
+                align-content: space-between;
+                justify-content: center;
+                align-items: flex-start;
+                h3, p {
+                    padding: 3px 0 3px 14px;
                     display: flex;
                     justify-content: center;
+                }
+                .icons {
+                    padding: 10px 24px 10px 0;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 22px;
+                    .fa-heart {
+                        &:hover {
+                            background: -webkit-gradient(linear, right bottom, right top, from($colour-secondary), to($colour-primary));
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-weight: 800;
+                            cursor: pointer;
+                        }  
+                    } 
                 }
             }
         }
