@@ -221,8 +221,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356dc));
+  background: linear-gradient(to bottom right, #FF79DA, #9356dc);
   padding: 17px 22px 17px 22px;
   border-radius: 25px;
   margin: 20px 0 17px 0;
@@ -250,7 +250,7 @@ h3 {
 }
 
 .functioning__explanation .stage_number {
-  background-color: #9356DC;
+  background-color: #9356dc;
   width: 24px;
   min-width: 24px;
   height: 24px;
@@ -268,11 +268,88 @@ h3 {
           align-items: baseline;
 }
 
+.functioning__explanation .stage--active, .functioning__explanation .stage:hover {
+  background-color: #f5edff;
+  cursor: pointer;
+}
+
+.functioning__explanation .stage--active > .fas, .functioning__explanation .stage:hover > .fas {
+  color: #9356dc;
+}
+
 .functioning__explanation .stage .fas {
-  width: 17px;
-  height: 17px;
-  font-size: 17px;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
   color: #7e7e7e;
+  margin-right: 10px;
+}
+
+.functioning__explanation .stage .fa-mobile-alt {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.functioning__explanation .stage .fa-list-ul {
+  -webkit-transform: scale(0.85, 1);
+          transform: scale(0.85, 1);
+}
+
+.functioning__explanation .stage .fa-store {
+  -webkit-transform: scale(0.85, 1);
+          transform: scale(0.85, 1);
+  color: #9356dc;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 55px 20px 55px 20px;
+}
+
+.restaurants__menu .menus {
+  margin: 18px 0 18px 0;
+  -webkit-box-shadow: 0px 5px 15px 0px #a3a2a2;
+          box-shadow: 0px 5px 15px 0px #a3a2a2;
+  border-radius: 12px 12px 12px 12px;
+}
+
+.restaurants__menu .menus__image {
+  width: 100%;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  border-radius: 12px 12px 0 0;
+}
+
+.restaurants__menu .menus__image--modifier {
+  -o-object-position: 0px -150px;
+     object-position: 0px -150px;
+}
+
+.restaurants__menu .menus__title {
+  width: 100%;
+  height: 77px;
+  background-color: white;
+  border-radius: 0 0 12px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurants__menu .menus__title h2, .restaurants__menu .menus__title p {
+  padding: 3px 0 3px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body {
