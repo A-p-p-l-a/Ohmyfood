@@ -3,30 +3,145 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <link rel="stylesheet" href="css/style.scss">
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="sass/main.css">
         <script src="https://kit.fontawesome.com/e2879d0e14.js" crossorigin="anonymous"></script>
         <title>Menu - Le délice des sens</title>
     </head>
     <body>   
         <header>
-            <div class="header__heading">
-                <a href="index.html">
-                    <img src="images/logo/ohmyfood.png" alt="Ohmyfood!"/>
+            <div class="header__block">
+                <a href="index.html">  
+                    <nav>
+                        <div class="nav__link">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                    </nav>
                 </a>
-            </div>
-            <nav>
-                <div class="nav__link">
-                    <a href="index.html">Retour</a>
+                <div class="header__heading">
+                    <div class="logo">
+                        <img src="images/logo/ohmyfood.png" alt="Ohmyfood!"/>
+                    </div>
                 </div>
-            </nav>
+            </div>
         </header>    
         <main>
             <section>
-
+                <div class="restaurant-card">
+                    <img class="restaurant-bg" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
+                    <div class="restaurant-select">
+                        <div class="restaurant-select__title">
+                            <h6>Le délice des sens</h6>
+                            <div class="icon">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="restaurant-select__category">
+                            <div class="restaurant-select__category--text">
+                                ENTRÉES
+                            </div>
+                            <div class="menus-choice">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <p>Aux zestes d'orange</p>
+                                <div class="price">
+                                25€
+                                </div>
+                            </div>
+                            <div class="menus-choice">
+                                <h3>Velouté de légumes d'antan</h3>
+                                <p>Carotte, panais, topinambour</p>
+                                <div class="price">
+                                    35€
+                                </div>
+                            </div>
+                            <div class="menus-choice">
+                                <h3>Soupe à l'oignon</h3>
+                                <p>Revisitée</p>
+                                <div class="price">
+                                    20€
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-select__category">
+                            <div class="restaurant-select__category--text">
+                                PLATS
+                            </div>
+                            <div class="menus-choice">
+                                <h3>Coquilles Saint-Jacques</h3>
+                                <p>Accompagnées d'une purée de panais</p>
+                                <div class="price">
+                                    40€
+                                </div>
+                            </div>
+                            <div class="menus-choice">
+                                <h3>Magret de canard</h3>
+                                <p>Et parmentier de pommes de terre</p>
+                                <div class="price">
+                                    35€
+                                </div>
+                            </div>
+                            <div class="menus-choice">
+                                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                                <div class="price">
+                                    44€
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-select__category">
+                            <div class="restaurant-select__category--text">
+                                DESSERTS
+                            </div>
+                            <div class="menus-choice">
+                                <h3>Pétales de violettes glacés</h3>
+                                <p>Et purée de noisettes</p>
+                                <div class="price">
+                                    18€
+                                </div>
+                            </div>
+                            <div class="menus-choice">
+                                <h3>Fondant au chocolat</h3>
+                                <p>Revisité</p>
+                                <div class="price">
+                                    22€
+                                </div>
+                            </div>
+                            <div class="menus-choice">
+                                <h3>Millefeuille croustillant</h3>
+                                <p>Myrtilles et pâte d’amande</p>
+                                <div class="price">
+                                    23€
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__button">
+                            <div class="button">
+                                Commander
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
+            <div class="footer__heading">
+                <a>ohmyfood</a>
+            </div>
+            <div class="footer__link">
+                <div class="link_elements">
+                    <i class="fas fa-utensils"></i>
+                    <a href="#">Proposer un restaurant</a>
+                </div>
+                <div class="link_elements">
+                    <i class="fas fa-hands-helping"></i>
+                    <a href="#">Devenir partenaire</a>
+                </div>
+                <div class="link_elements">
+                    <a href="#">Mentions légales</a>
+                </div>
+                <div class="link_elements">
+                    <a href="mailto:contact@ohmyfood.fr">Contact</a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

@@ -2,54 +2,55 @@
 
 
 
-    .header__block {
-        height: 46px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        a {
-            position: absolute;
-            nav {
-                margin-left: 14px;
-                width: 20px;
-                height: 20px;
-                .nav__link {
-                    i {
-                        text-decoration: none;
-                        color: $colour-very-dark-grey;
-                        width: 50px;
-                        font-size: 20px;
-                        height: 50px;
-                    }
-                    &--hide {
-                        display: none;
-                    }
-                }
-            }    
-        }
-        .header__heading {
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+.header__block {
+    height: 46px;
+    padding-top: 17px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    a {
+        position: absolute;
         
-        
-            .logo {
+        nav {
+            margin-left: 14px;
+            width: 20px;
+            height: 20px;
             
-                margin: 0px;
-                padding: 0px;
-                display: flex;
-                justify-content: center;
-            
-                img {
-                    width: 150px;
+            .nav__link {
+                
+                i {
+                    text-decoration: none;
+                    color: $colour-very-dark-grey;
+                    width: 50px;
+                    font-size: 20px;
+                    height: 50px;
                 }
             }
-        }
-        
+        }    
     }
+    
+    .header__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            
+            img {
+                width: 150px;
+             }
+        }
+    }
+        
+}
 

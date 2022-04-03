@@ -2,7 +2,9 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./pages/index";
-@import "./pages/a-la-francaise";
+@import "./pages/menu";
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/keyframes";
 @import "./base/typography";
 @import "./components/buttons";
