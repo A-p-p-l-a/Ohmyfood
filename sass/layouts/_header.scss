@@ -1,16 +1,9 @@
-@import "../utils/variables";
-
-
 
 .header__block {
     height: 46px;
     padding-top: 17px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex-column-wrap-aligncontentcenter-justcenter;
     
     a {
         position: absolute;
@@ -25,22 +18,16 @@
                 i {
                     text-decoration: none;
                     color: $colour-very-dark-grey;
-                    width: 50px;
                     font-size: 20px;
-                    height: 50px;
                 }
             }
         }    
     }
     
     .header__heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-column-center;
 
-        .logo {
-            
+        .logo { 
             margin: 0px;
             padding: 0px;
             display: flex;

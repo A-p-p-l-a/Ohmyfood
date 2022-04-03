@@ -1,14 +1,9 @@
-@import "../utils/variables";
-
-
 
 .location {
     &__banner{
         background-color: $colour-dark-grey;
         box-shadow: inset 0px 5px 4px -5px #7e7e7e;
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
+        @include flex-justifycenter;
         padding: $sixteen-padding-height;
         i {
             font-size: 16px;
@@ -18,10 +13,7 @@
     }
     &__explore {
         background-color: $colour-light-grey;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-column-itemcenter;
         text-align: center;
         padding: 40px 50px 40px 50px;
         h1{
@@ -34,7 +26,8 @@
     }
     &__button {
         margin:20px 0 17px 0;
-        padding: 0 22px 0 22px;
+        padding-left: 22px;
+        padding-right: 22px;
     }
 
 }
@@ -47,8 +40,7 @@
             background-color: $colour-light-grey;
             box-shadow: 0px 5px 15px 0px #a3a2a2;
             border-radius: 16px;
-            display: flex;
-            align-items: center;
+            @include flex-itemcenter;
             margin: 26px 0 26px 12px;
             padding: 21px 0 21px 0;
             &_number{
@@ -59,9 +51,7 @@
                 margin-left: -12px;
                 margin-right: 22px;
                 border-radius: 12px;
-                display: flex;
-                justify-content: center;
-                align-items:baseline;
+                @include flex-center;
             }
             &--active, &:hover {
                 background-color: #f5edff;
@@ -99,9 +89,7 @@
             text-decoration: none;
             position:initial;
             .menus {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
+                @include flex-column-itemend;
                 position: relative;
                 margin: 18px 0 18px 0;
                 box-shadow: 0px 5px 15px 0px #bdbdbd;
@@ -130,16 +118,13 @@
                     height: 77px;
                     background-color: white;
                     border-radius: 0 0 12px 12px;
-                    display: flex;
-                    flex-direction: column; 
-                    flex-wrap: wrap;
-                    align-content: space-between;
-                    justify-content: center;
-                    align-items: flex-start;
+                    @include flex-column-wrap-between-justcenter-itemstart;
                     h3, p {
                         padding: 3px 0 3px 14px;
-                        display: flex;
-                        justify-content: center;
+                        @include flex-justifycenter;
+                    }
+                    .icon {
+                        padding-right: 24px;
                     }
                 }
             }
