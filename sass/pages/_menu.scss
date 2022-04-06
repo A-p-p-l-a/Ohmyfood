@@ -1,55 +1,129 @@
-@import "../utils/variables";
 
-.restaurant-card {
-    .restaurant-bg {
+  
+  
 
-        object-position: center;
-        object-fit:cover;
-        height: 265px;
-        width: 100%;
-    
-    }
-    .restaurant-select{
-        position:relative;
-        margin-top: -55px;
-        background-color: $colour-light-grey;
-        border-radius: 35px 35px 0 0;
-        padding-bottom: 50px;
-        &__title {
-            @include flex-justifycenter-itembetween;
-            padding: 34px 0 0 18px;
-            .icon {
-                margin-right: 38px;
-                font-size: 22px;
-            }
-        }
-        &__category {
-            margin: 0 14px 0 14px;
+.restaurant-bg {
+    object-position: center;
+    object-fit:cover;
+    height: 265px;
+    width: 100%;
+}
+
+.restaurant-select{
+    position:relative;
+    margin-top: -55px;
+    background-color: $colour-light-grey;
+    border-radius: 35px 35px 0 0;
+    padding-bottom: 50px;
+   
+    &__title {
+        @include flex-justifybetween-itemcenter;
+        padding: 34px 0 0 18px;
             
-            .menus-choice {
-                height: 68px;
-                background-color: white;
-                border-radius: 16px;
-                box-shadow: 0px 5px 10px 0px #e6e6e6;
-                @include flex-column-wrap-between-justcenter-itemstart;
-                padding: 0 12px 0 12px;
-                margin: 14px 0 14px 0;
-                .price{
-                    padding: 42px 7px 14px 0;
-
-                } 
-            }
-
+        .icon {
+            margin-right: 38px;
+            font-size: 22px;
         }
-        .order__button{
-            display: flex;
-            align-items:  center;
-            flex-direction: column;
-            width: auto;
-            margin: 50px 0 0 0;
-            .button {
-                width: 186px;
+    }
+    &__category{
+        margin: 0 14px;  
+        animation: menus-choice-anim 0.5s cubic-bezier(.24,.68,.61,1.02) alternate forwards;
+    } 
+}
+
+.menus-choice {
+    opacity: 0;
+    margin: 14px 0;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 68px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+    animation: menus-choice-anim 1s cubic-bezier(.24,.68,.61,1.02) alternate forwards;
+    
+
+    &:hover {
+        
+        .price{
+            padding-right: 70px;
+            transition: padding-right 0.3s;
+           
+        }
+        .choice{
+            transform: translateX(-60px);
+
+            i {
+                transform: rotate(360deg);
+                transition: transform 300ms cubic-bezier(0,0,0,0);
+                
             }
         }
+
+    }
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: $colour-tertiary;
+    border-radius: 0 16px 16px 0;
+    right: -60px;
+    height: 100%;
+    padding: 0 20px;
+    transform: translateX(0px);
+    transition-property: transform;
+    transition-duration: 0.3s;
+   
+     i {
+        font-size: 20px;
+        color: white;
+        
+     }
+}
+
+.menus-block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__text {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .price {
+        padding-right: 15px;
+        padding-left: 7px;
+        padding-top: 30px;
+        transform: translateX(0px);
+        transition-property: transform, padding-right;
+        transition-duration: 0.3s;
+       
+    }
+}
+
+.order__button{
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    width: auto;
+    margin: 50px 0 0 0;
+    
+    .button {
+        width: 186px;
+    }
+}
+
+@for $i from 1 through 10 {
+    .menus-choice-#{$i} {
+      animation-delay: ($i * 150) + 100ms;
     }
 }

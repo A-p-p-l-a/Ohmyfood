@@ -50,10 +50,16 @@
     align-items: flex-end;
 }
 
-@mixin flex-justifycenter-itembetween {
+@mixin flex-justifybetween-itemcenter {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@mixin flex-justifybetween-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 @mixin flex-column-itemcenter {
@@ -61,3 +67,9 @@
     align-items:  center;
     flex-direction: column;
 }
+
+@mixin ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

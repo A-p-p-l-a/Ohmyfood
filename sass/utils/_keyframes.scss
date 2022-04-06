@@ -1,0 +1,51 @@
+  
+  @keyframes heart-in {
+    0% {
+      transform: scale(1, 1);
+      font-weight: 200; 
+      -webkit-text-fill-color:black;
+    }
+    30% {
+      transform: scale(1.25, 0.75);
+      font-weight: 200; 
+      -webkit-text-fill-color:black;
+    }
+    40% {
+      transform: scale(0.75, 1.25);
+      font-weight: 800;
+      -webkit-text-fill-color: transparent;
+    }
+    50% {
+      transform: scale(1.15, 0.85);
+      font-weight: 800;
+      -webkit-text-fill-color: transparent;
+    }
+    65% {
+      transform: scale(0.95, 1.05);
+      font-weight: 800;
+      -webkit-text-fill-color: transparent;
+    }
+    75% {
+      transform: scale(1.05, 0.95);
+      font-weight: 800;
+      -webkit-text-fill-color: transparent;
+    }
+    100% {
+      transform: scale(1, 1);
+      font-weight: 800;
+      -webkit-text-fill-color: transparent;
+
+    }
+  }
+
+  @keyframes menus-choice-anim {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        transform-origin: bottom;
+    }
+  }

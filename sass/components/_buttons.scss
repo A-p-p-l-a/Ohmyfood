@@ -8,10 +8,9 @@
     box-shadow: 0px 5px 15px 0px #a3a2a2;
     &:hover {
         cursor: pointer;
-    }
-    &:active {
         color: white;
         opacity: 80%;
+        box-shadow: 0px 5px 15px 0px #6b6b6b;
     }
 }
 
@@ -19,15 +18,18 @@
     padding: 10px 0 10px 0;
     @include flex-justifycenter;
     color: black;
+
     .fa-heart {
         font-size: 22px;
+        -webkit-text-fill-color: black;
+        
         &:hover {
+            cursor: pointer;
+            animation: heart-in 0.9s;
+            font-weight: 800;
             background: -webkit-gradient(linear, right bottom, right top, from($colour-secondary), to($colour-primary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-weight: 800;
-            cursor: pointer;
-            
         }  
     } 
 }
