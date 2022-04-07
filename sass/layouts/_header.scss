@@ -3,7 +3,10 @@
     height: 46px;
     padding-top: 17px;
     position: relative;
-    @include flex-column-wrap-aligncontentcenter-justcenter;
+    @include flex-justifycenter;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
     
     a {
         position: absolute;

@@ -10,15 +10,6 @@
     align-items: center;
     }
 
-@mixin flex-column-wrap-between-justcenter-itemstart{
-    display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center;
-    align-items: flex-start;
-}  
-
 @mixin flex-itemcenter {
     display:flex;
     align-items: center;
