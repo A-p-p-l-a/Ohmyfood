@@ -634,7 +634,7 @@ footer .link_elements i.fa-hands-helping {
   transform: scale(0.85, 1);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 678px) {
   .functioning__explanation {
     display: flex;
     justify-content: center;
@@ -718,7 +718,7 @@ footer .link_elements i.fa-hands-helping {
   padding-right: 24px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 678px) {
   .restaurants__shop {
     display: flex;
     align-items: center;
